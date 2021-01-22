@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif; }
+  body .container {
+    margin: 0 auto;
+    width: 80vw; }
+  body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 9px 0px rgba(220, 220, 220, 0.75); }
+    body header .logo {
+      width: 30%; }
+    body header nav {
+      display: flex;
+      flex-grow: 4;
+      align-items: center;
+      justify-content: space-between; }
+      body header nav a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold; }
+    body header .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 30%; }
+
+a {
+  color: #00B7FF; }
+
+input {
+  border: none; }
+
+/*# sourceMappingURL=style.css.map */
