@@ -13,7 +13,7 @@ body
       justify-content: space-between
       align-items: center
       padding: 10px 20px
-      box-shadow: 0px 2px 9px 0px rgba(220, 220, 220, 0.75)
+      box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75)
 
       .logo
         width: 30%
@@ -35,6 +35,8 @@ body
         align-items: center
         width: 30%
     section
+      margin-top: 20px
+      box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75)
       .swiper-wrapper
         height: unset
 
@@ -51,21 +53,50 @@ body
             height: 100%
             display: flex
             flex-direction: column
+            justify-content: space-around
             padding: 0 2vw
-            h2
-              font-size: 4rem
-              margin-block-start: 1em
-              margin-block-end: .5em
-              text-align: center
-              sub
-                font-size: 10px
-                position: relative
-                left: -20px
-                top: -15px
-            .title
-              font-size: 2rem
-              font-weight: bold
-
+            div:first-child
+              display: flex
+              flex-direction: column
+              h2
+                font-size: 4em
+                margin-block-start: 1em
+                margin-block-end: .3em
+                text-align: center
+                sub
+                  font-size: 10px
+                  position: relative
+                  left: -20px
+                  top: -15px
+              .title
+                font-size: 2em
+                font-weight: bold
+                color: #414141
+              .description
+                margin-top: 10px
+                color: #646464
+            div:last-child
+              display: flex
+              justify-content: flex-end
+              button
+                display: block
+                background-color: #d01111
+                font-family: 'regular', sans-serif
+                padding: 15px
+                color: white
+                border-radius: 10px
+                border: none
+    .swiper-pagination
+      .swiper-pagination-bullet
+        width: 70px
+        height: 5px
+        margin: 0 10px
+        border-radius: 5px
+        background-color: white
+        box-shadow: 0 1px 2px 0 rgba(9, 3, 3, 0.75)
+        opacity: 1
+      .swiper-pagination-bullet-active
+        background-color: #262626
 
 a
   color: #00B7FF
