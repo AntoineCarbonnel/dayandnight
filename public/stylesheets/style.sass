@@ -1,3 +1,5 @@
+@import "fonts"
+
 body
   margin: 0
   font-family: Helvetica, sans-serif
@@ -6,32 +8,63 @@ body
     margin: 0 auto
     width: 80vw
 
-  header
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding: 10px 20px
-    box-shadow: 0px 2px 9px 0px rgba(220, 220, 220, 0.75)
-
-    .logo
-      width: 30%
-
-    nav
-      display: flex
-      flex-grow: 4
-      align-items: center
-      justify-content: space-between
-
-      a
-        color: black
-        text-decoration: none
-        font-weight: bold
-
-    .links
+    header
       display: flex
       justify-content: space-between
       align-items: center
-      width: 30%
+      padding: 10px 20px
+      box-shadow: 0px 2px 9px 0px rgba(220, 220, 220, 0.75)
+
+      .logo
+        width: 30%
+
+      nav
+        display: flex
+        flex-grow: 4
+        align-items: center
+        justify-content: space-between
+
+        a
+          color: black
+          text-decoration: none
+          font-weight: bold
+
+      .links
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 30%
+    section
+      .swiper-wrapper
+        height: unset
+
+        .swiper-slide
+          display: flex
+          justify-content: space-between
+          align-items: center
+          height: unset
+
+          img
+            width: 50%
+
+          article
+            height: 100%
+            display: flex
+            flex-direction: column
+            padding: 0 2vw
+            h2
+              font-size: 4rem
+              margin-block-start: 1em
+              margin-block-end: .5em
+              text-align: center
+              sub
+                font-size: 10px
+                position: relative
+                left: -20px
+                top: -15px
+            .title
+              font-size: 2rem
+              font-weight: bold
 
 
 a
