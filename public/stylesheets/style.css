@@ -20,6 +20,15 @@
 .impact {
   font-family: 'Impact', sans-serif; }
 
+html {
+  font-size: 100%; }
+
+a {
+  color: #00B7FF; }
+
+input {
+  border: none; }
+
 body {
   margin: 0;
   font-family: Helvetica, sans-serif; }
@@ -48,50 +57,52 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 30%; }
-    body .container section {
+    body .container section#slider {
       margin-top: 20px;
       box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75); }
-      body .container section .swiper-wrapper {
+      body .container section#slider .swiper-wrapper {
         height: unset; }
-        body .container section .swiper-wrapper .swiper-slide {
+        body .container section#slider .swiper-wrapper .swiper-slide {
           display: flex;
           justify-content: space-between;
           align-items: center;
           height: unset; }
-          body .container section .swiper-wrapper .swiper-slide img {
+          body .container section#slider .swiper-wrapper .swiper-slide img {
             width: 50%; }
-          body .container section .swiper-wrapper .swiper-slide article {
+          body .container section#slider .swiper-wrapper .swiper-slide article {
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 0 2vw; }
-            body .container section .swiper-wrapper .swiper-slide article div:first-child {
+            body .container section#slider .swiper-wrapper .swiper-slide article div:first-child {
               display: flex;
               flex-direction: column; }
-              body .container section .swiper-wrapper .swiper-slide article div:first-child h2 {
-                font-size: 4em;
-                margin-block-start: 1em;
-                margin-block-end: .3em;
-                text-align: center; }
-                body .container section .swiper-wrapper .swiper-slide article div:first-child h2 sub {
+              body .container section#slider .swiper-wrapper .swiper-slide article div:first-child h2 {
+                font-size: 6rem;
+                margin-block-start: 1rem;
+                margin-block-end: .3rem;
+                text-align: center;
+                white-space: nowrap; }
+                body .container section#slider .swiper-wrapper .swiper-slide article div:first-child h2 sub {
                   font-size: 10px;
                   position: relative;
-                  left: -20px;
+                  left: -5%;
                   top: -15px; }
-              body .container section .swiper-wrapper .swiper-slide article div:first-child .title {
-                font-size: 2em;
+              body .container section#slider .swiper-wrapper .swiper-slide article div:first-child .title {
+                font-size: 2rem;
                 font-weight: bold;
                 color: #414141; }
-              body .container section .swiper-wrapper .swiper-slide article div:first-child .description {
+              body .container section#slider .swiper-wrapper .swiper-slide article div:first-child .description {
                 margin-top: 10px;
                 color: #646464; }
-            body .container section .swiper-wrapper .swiper-slide article div:last-child {
+            body .container section#slider .swiper-wrapper .swiper-slide article div:last-child {
               display: flex;
               justify-content: flex-end; }
-              body .container section .swiper-wrapper .swiper-slide article div:last-child button {
+              body .container section#slider .swiper-wrapper .swiper-slide article div:last-child button {
                 display: block;
                 background-color: #d01111;
+                font-size: 1rem;
                 font-family: 'regular', sans-serif;
                 padding: 15px;
                 color: white;
@@ -107,11 +118,18 @@ body {
       opacity: 1; }
     body .container .swiper-pagination .swiper-pagination-bullet-active {
       background-color: #262626; }
+    body .container section#articles {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 20px;
+      grid-column-gap: 20px; }
 
-a {
-  color: #00B7FF; }
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 80%; } }
 
-input {
-  border: none; }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 60%; } }
 
 /*# sourceMappingURL=style.css.map */

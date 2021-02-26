@@ -1,5 +1,14 @@
 @import "fonts"
 
+html
+  font-size: 100%
+
+a
+  color: #00B7FF
+
+input
+  border: none
+
 body
   margin: 0
   font-family: Helvetica, sans-serif
@@ -34,7 +43,7 @@ body
         justify-content: space-between
         align-items: center
         width: 30%
-    section
+    section#slider
       margin-top: 20px
       box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75)
       .swiper-wrapper
@@ -59,17 +68,18 @@ body
               display: flex
               flex-direction: column
               h2
-                font-size: 4em
-                margin-block-start: 1em
-                margin-block-end: .3em
+                font-size: 6rem
+                margin-block-start: 1rem
+                margin-block-end: .3rem
                 text-align: center
+                white-space: nowrap
                 sub
                   font-size: 10px
                   position: relative
-                  left: -20px
+                  left: -5%
                   top: -15px
               .title
-                font-size: 2em
+                font-size: 2rem
                 font-weight: bold
                 color: #414141
               .description
@@ -81,6 +91,7 @@ body
               button
                 display: block
                 background-color: #d01111
+                font-size: 1rem
                 font-family: 'regular', sans-serif
                 padding: 15px
                 color: white
@@ -98,8 +109,16 @@ body
       .swiper-pagination-bullet-active
         background-color: #262626
 
-a
-  color: #00B7FF
+    section#articles
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-row-gap: 20px
+      grid-column-gap: 20px
 
-input
-  border: none
+@media screen and (max-width: 1500px) // medium size screen
+  html
+    font-size: 80%
+
+@media screen and (max-width: 1200px) // laptop size screen
+  html
+    font-size: 60%
