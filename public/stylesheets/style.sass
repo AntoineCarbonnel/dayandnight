@@ -15,7 +15,7 @@ body
 
   .container
     margin: 0 auto
-    width: 80vw
+    width: 1600px
 
     header
       display: flex
@@ -25,7 +25,7 @@ body
       box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75)
 
       .logo
-        width: 30%
+        width: 20%
 
       nav
         display: flex
@@ -42,10 +42,12 @@ body
         display: flex
         justify-content: space-between
         align-items: center
-        width: 30%
+        width: 20%
+
     section#slider
       margin-top: 20px
       box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75)
+
       .swiper-wrapper
         height: unset
 
@@ -64,30 +66,37 @@ body
             flex-direction: column
             justify-content: space-around
             padding: 0 2vw
+
             div:first-child
               display: flex
               flex-direction: column
+
               h2
                 font-size: 6rem
                 margin-block-start: 1rem
                 margin-block-end: .3rem
                 text-align: center
                 white-space: nowrap
+
                 sub
                   font-size: 10px
                   position: relative
                   left: -5%
                   top: -15px
+
               .title
                 font-size: 2rem
                 font-weight: bold
                 color: #414141
+
               .description
                 margin-top: 10px
                 color: #646464
+
             div:last-child
               display: flex
               justify-content: flex-end
+
               button
                 display: block
                 background-color: #d01111
@@ -97,6 +106,7 @@ body
                 color: white
                 border-radius: 10px
                 border: none
+
     .swiper-pagination
       .swiper-pagination-bullet
         width: 70px
@@ -106,6 +116,7 @@ body
         background-color: white
         box-shadow: 0 1px 2px 0 rgba(9, 3, 3, 0.75)
         opacity: 1
+
       .swiper-pagination-bullet-active
         background-color: #262626
 
@@ -119,23 +130,33 @@ body
       article
         box-shadow: 0 2px 9px 0 rgba(220, 220, 220, 0.75)
         border-radius: 5px
+
         figure
           margin: 0
+
           > img
             width: 100%
+
           figcaption
             padding: 10px 5%
+
             .title
               font-size: 2rem
               text-transform: uppercase
               color: #2d2b2b
-            .description
 
-
-@media screen and (max-width: 1500px) // medium size screen
+// medium size screen
+@media screen and (max-width: 1500px)
   html
     font-size: 80%
 
-@media screen and (max-width: 1200px) // laptop size screen
+    .container
+      width: 1200px
+
+// laptop size screen
+@media screen and (max-width: 1200px)
   html
     font-size: 60%
+
+    .container
+      width: 100%

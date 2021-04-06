@@ -1,13 +1,13 @@
-let express = require('express');
-let http = require('http');
-let path = require('path');
-let cookieParser = require('cookie-parser');
-let logger = require('morgan');
-let sassMiddleware = require('node-sass-middleware');
+const express = require('express');
+const http = require('http');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const sassMiddleware = require('node-sass-middleware');
 
-let indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index');
 
-let app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
