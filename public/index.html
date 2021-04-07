@@ -8,7 +8,7 @@
 
 <body>
 <div class="container">
-<!--     section header -->
+    <!--     section header -->
     <header>
         <div class="logo">
             <img src="img/robot.png" alt="robot">
@@ -39,11 +39,19 @@
                 <img height="20" src="img/account.png" alt="account">
             </a>
             <div id="langSelector">
-                <img src="img/lang/spain.png" alt="spain flag">
+                <a href="/fr">
+                    <img src="img/lang/french.png" alt="french flag">
+                </a>
+                <a href="/es">
+                    <img src="img/lang/spain.png" alt="spain flag">
+                </a>
+                <a href="/en">
+                    <img src="img/lang/english.png" alt="english flag">
+                </a>
             </div>
         </div>
     </header>
-<!--    Slider -->
+    <!--    Slider -->
     <section id="slider">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -117,7 +125,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-<!--    List article-->
+    <!--    List article-->
     <section id="articles">
         <article>
             <figure>
@@ -158,20 +166,45 @@
                 </figcaption>
             </figure>
         </article>
-
     </section>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <span>Maquette par John Aplogan :</span>
+            <div class="logo">
+                <a target="_blank" href="https://www.behance.net/johnaplogan">
+                    <img src="img/behance.png" alt="Behance">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/john-aplogan-86137a194/">
+                    <img src="img/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+        <div>
+            <span>Intégrer par Antoine Carbonnel :</span>
+            <div class="logo">
+                <a target="_blank" href="https://antoine-carbonnel.website/">
+                    <img src="img/website.png" alt="Website">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/antoinecarbonnel/">
+                    <img src="img/linkedin.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
 </div>
 
 </body>
-<script>
-  const mySwiper = new Swiper('.swiper-container', {
+<script lang="js">
+    const mySwiper = new Swiper('.swiper-container', {
 
-    direction: 'horizontal',
-    loop: true,
+        direction: 'horizontal',
+        loop: true,
 
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  })
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    })
 </script>
 </html>
